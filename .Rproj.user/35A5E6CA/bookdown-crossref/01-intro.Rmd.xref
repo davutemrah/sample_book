@@ -1,4 +1,8 @@
 h1:intro Introduction
-fig:nice-fig Here is a nice figure!
-tab:nice-tab Here is a nice table!
+h2:types-of-objects-in-python Types of objects in Python
+h2:expressions-mathematical-operations Expressions: Mathematical Operations
+h2:string-operations String Operations
+h3:indices Indices
+h3:slicing Slicing
+h3:concatenate Concatenate
 

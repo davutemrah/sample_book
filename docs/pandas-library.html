@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | A Minimal Book Example</title>
+  <title>Chapter 3 Pandas Library | A Minimal Book Example</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.27.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | A Minimal Book Example" />
+  <meta property="og:title" content="Chapter 3 Pandas Library | A Minimal Book Example" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | A Minimal Book Example" />
+  <meta name="twitter:title" content="Chapter 3 Pandas Library | A Minimal Book Example" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="final-words.html"/>
-
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="random.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -187,17 +187,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="references" class="section level1 unnumbered hasAnchor">
-<h1>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="pandas-library" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Pandas Library<a href="pandas-library.html#pandas-library" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>run <code>pip3 install pandas</code>
+on rstudio terminal or mac terminal or jupyter notebook</p>
+<div id="read-data" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> read data<a href="pandas-library.html#read-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb65-1"><a href="pandas-library.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb65-2"><a href="pandas-library.html#cb65-2" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">&#39;display.max_columns&#39;</span>, <span class="va">None</span>)</span></code></pre></div>
+<div id="csv-file" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> csv file<a href="pandas-library.html#csv-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>IBM sample data:</strong> I could not run with “https” because I did not have a certificate installed. So, I go on with “http” and it worked.</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="pandas-library.html#cb66-1" aria-hidden="true" tabindex="-1"></a>data_link <span class="op">=</span> <span class="st">&quot;http://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DS0103EN/labs/data/recipes.csv&quot;</span></span>
+<span id="cb66-2"><a href="pandas-library.html#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="pandas-library.html#cb66-3" aria-hidden="true" tabindex="-1"></a>recipes <span class="op">=</span> pd.read_csv(data_link)</span></code></pre></div>
+</div>
+</div>
+<div id="explore-data" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Explore Data<a href="pandas-library.html#explore-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="pandas-library.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co">#recipes.head()</span></span></code></pre></div>
+<div id="get-the-dimensions-of-the-dataframe." class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Get the dimensions of the dataframe.<a href="pandas-library.html#get-the-dimensions-of-the-dataframe." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb68-1"><a href="pandas-library.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co">#recipes.shape</span></span></code></pre></div>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="final-words.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="random.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -228,7 +250,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-references.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-pandas.Rmd",
 "text": "Edit"
 },
 "history": {

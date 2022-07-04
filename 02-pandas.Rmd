@@ -1,0 +1,55 @@
+```{r include = FALSE}
+library(reticulate)
+
+if(!knitr:::is_html_output())
+{
+  options("width"=56)
+  knitr::opts_chunk$set(tidy.opts=list(width.cutoff=56, indent = 2), tidy = TRUE)
+  knitr::opts_chunk$set(fig.pos = 'H')
+}
+```
+
+# Pandas Library
+
+run `pip3 install pandas` 
+on rstudio terminal or mac terminal or jupyter notebook
+
+## read data
+
+```{python lib1}
+import pandas as pd 
+pd.set_option('display.max_columns', None)
+```
+
+### csv file
+
+**IBM sample data:** I could not run with "https" because I did not have a certificate installed. So, I go on with "http" and it worked.
+
+```{python data1, eval=FALSE}
+data_link = "http://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DS0103EN/labs/data/recipes.csv"
+
+recipes = pd.read_csv(data_link)
+```
+
+
+
+## Explore Data
+
+```{python}
+#recipes.head()
+```
+
+
+### Get the dimensions of the dataframe.
+
+```{python}
+#recipes.shape
+```
+
+
+
+
+
+
+
+
